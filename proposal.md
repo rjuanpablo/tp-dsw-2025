@@ -14,7 +14,7 @@
 *2 a 6 líneas describiendo el negocio (menos es más)*
 
 ### Modelo
-![imagen del modelo]()
+!https://drive.google.com/file/d/1IKAVBwg-HUcDQRirVyASKb3dZpRd-MN6/view?usp=sharing
 
 *Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
 
@@ -27,10 +27,10 @@
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
+|CRUD simple|1. CRUD Usuario<br>2. CRUD Proveedor<br>3. CRUD Ingrediente<br>4. CRUD Producto<br>5. CRUD Promocion|
+|CRUD dependiente|1. CRUD Pedido {depende de} CRUD Usuario<br>2. CRUD Pago {depende de} CRUD Pedido<br>3. CRUD Linea_Pedido {depende de} CRUD Pedido y CRUD Poducto<br>4. CRUD Producto_Ingrediente {depende de} CRUD Producto y CRUD Ingrediente => detalle CRUD PRODUCTO
+|Listado<br>+<br>detalle| 1. Listado de productos, muestra Nombre, descripción, precio y promociones aplicables? => detalle CRUD Habitacion<br> 2. Listado de promociones mostrando descripción, productos incluidos, fecha de validez, precio con descuento => detalle muestra datos completos de la PROMOCION<br> 3. Listado de reseñas filtrado por producto mostrando nombre del producto, calificación, comentario => detalle muestra datos completos de la entidad RESEÑA|
+|CUU/Epic|1. Registrar reseña del USUARIO respecto a un producto<br>2. Registrar pago de un PEDIDO<br>3. Registrar un nuevo USUARIO<br>4. Validar un USUARIO<br>5. Notificar por mail un PEDIDO|
 
 
 Adicionales para Aprobación
