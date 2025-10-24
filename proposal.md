@@ -7,8 +7,9 @@
 * 51408 - Sanchez Machado,Tomás
 
 ### Repositorios
-* [frontend app](https://github.com/TomasSanchezMachado/NIAMI-Backend)
-* [backend app](https://github.com/facundofinelli/fastfood-frontend)
+* [frontend app](https://github.com/facundofinelli/fastfood-frontend)
+* [backend app](https://github.com/TomasSanchezMachado/NIAMI-Backend)
+* https://github.com/TomasSanchezMachado/NIAMI-Backend
 
 ## Tema
 ### Descripción
